@@ -129,7 +129,7 @@
   [Zürich, CH],
   [
     - TA for "Numerical Methods for Partial Differential Equations" (Prof. Ralf Hiptmair)
-    - Instructed students in weekly tutorials on mathematical theory and `C++` implementation.
+    - Instructed students in weekly tutorials on mathematical theory and `C++` implementation
   ]
 )
 
@@ -140,9 +140,9 @@
   [Basel, CH],
   [
     - MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided LaserosteotomE)
-    - Development on SpectoVR, a Virtual Reality surgical planning tool.
+    - Development on SpectoVR, a Virtual Reality surgical planning tool
     - Implemented high-performance Multi-Volume Rendering using raymarching compute shaders
-    - Visualization of PET/CT scans.
+    - Visualization of PET/CT scans
   ]
 )
 
@@ -152,8 +152,8 @@
   [Adobe],
   [San Francisco, USA],
   [
-    - Member of the "Screens" team for Adobe Experience Manager (AEM).
-    - Contributed to enterprise-scale digital signage software.
+    - Member of the "Screens" team for Adobe Experience Manager
+    - Contributed to enterprise-scale digital signage software
     - Content Targeting using Machine Learning with TensorFlow
   ]
 )
@@ -164,9 +164,9 @@
   [University of Basel (Dept. of Physics)],
   [Basel, CH],
   [
-    - Applied Machine Learning to problem in computational chemistry.
-    - Predicted the energy of various configurations of the water molecule.
-    - Custom Neural Network Implementation in `C++`/Eigen with backpropagation.
+    - Applied Machine Learning to problem in computational chemistry
+    - Predicted the energy of various configurations of the water molecule
+    - Custom Neural Network Implementation in `C++`/Eigen with backpropagation
     - "Extraordinary performance for a high school student" - Prof. Stefan Goedecker
   ]
 )
@@ -180,7 +180,7 @@
   - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
 
 - *ZUCCMAP Seminar: Lean 4 and the Curry-Howard Isomorphism*\
-  - Topics: Functional Programming, Type Theory, propositions-as-types, formal verification and interactive theorem proving. \
+  - Topics: Functional Programming, Type Theory, propositions-as-types, formal verification and interactive theorem proving \
   - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube] 
 
 #section-header("Technical Projects & Open-Source")
@@ -202,7 +202,7 @@
     Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes
     - Support for arbitrary dimensional manifolds with arbitrary topology
     - Any rank differential forms
-    - Solves Hodge-Laplace source and eigenvalue problems.
+    - Solves Hodge-Laplace source and eigenvalue problems
     - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
   ]
 )
@@ -212,7 +212,7 @@
   [Rust, WGPU, WebAssembly],
   [
     High-performance digital pen note-taking application
-    - Custom rendering with `wgpu` (WebGPU) for cross-platform hardware acceleration.
+    - Custom rendering with `wgpu` (WebGPU) for cross-platform hardware acceleration
     - Custom egui-winit-wgpu integration and OSS contributions
     - WASM web app
     - Repository: #weblink("https://github.com/luiswirth/carveout")[GitHub]
@@ -224,9 +224,9 @@
   [Rust, Async, Tokio, Networking, Type-Level Abstraction],
   [
     Implementation of Ultimate Tic-Tac-Toe
-    - Arbitrarily deep board nesting, thanks to generic programming.
-    - A networked server-client multiplayer game.
-    - Async Rust and Tokio for concurrent client handling.
+    - Arbitrarily deep board nesting, thanks to generic programming
+    - A networked server-client multiplayer game
+    - Async Rust and Tokio for concurrent client handling
     - Serde for Serialization
     - Repository: #weblink("https://github.com/luiswirth/uttt")[GitHub]
   ]
@@ -265,7 +265,7 @@
   "NixOS, Flakes",
   [
     Personal NixOS system configuration
-    - Reproducible development environments using Nix ecosystem.
+    - Reproducible development environments using Nix ecosystem
     - Repository: #weblink("https://github.com/luiswirth/dotnix")[GitHub]
   ]
 )
