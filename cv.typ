@@ -4,9 +4,15 @@
 )
 #set text(
   font: "New Computer Modern Sans",
-  size: 10pt,
+  size: 9pt,
   lang: "en"
 )
+
+#let fgcolor = black
+#let bgcolor = white
+
+#set text(fill: fgcolor)
+#set page(fill: bgcolor)
 
 #let weblink(..args) = text(
   fill: blue,
@@ -73,8 +79,8 @@
   #v(0.5em)
   #weblink("mailto:luwirth@ethz.ch") |
   #weblink("lwirth.com") \
-  #weblink("https://github.com/luiswirth")[GitHub] |
   #weblink("https://www.linkedin.com/in/luis-wirth-256618172/")[LinkedIn] |
+  #weblink("https://github.com/luiswirth")[GitHub] |
   #weblink("https://www.youtube.com/@luiswirth")[YouTube]
 ]
 
@@ -89,11 +95,11 @@
     //- *GPA:* ?/6.0
     //- *Major:* Computational Electromagnetics
     - *Key Coursework:*
-      - AI in the Sciences and Engineering (PINNs, Neural Operators)
-      - Advanced Numerical Methods for CSE (Boundary Element Method and Physics Gaussian Processes)
-      - VLSI 1: HDL Based Design for FPGAs (SystemVerilog, Vivado)
-      - VLSI 3: Full-Custom Digital Circuit Design (Schematic and Layout in Vivado)
-      - Neuromorphic Engineering I
+      - AI in the Sciences and Engineering (PINNs, Neural Operators, Diffusion Models, Physics Foundation Models)
+      - Advanced Numerical Methods for CSE (Boundary Element Method and Gaussian Processes for PDEs)
+      - VLSI 1: HDL Based Design for FPGAs (Xilinx Vivado, SystemVerilog)
+      - VLSI 3: Full-Custom Digital Circuit Design (Cadence Virtuoso, Schematic, Layout)
+      - Neuromorphic Engineering I (Analog VLSI)
   ]
 )
 
@@ -106,11 +112,11 @@
     - *Major:* Computational Physics
     - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes
     - *Key Coursework:*
-      - High-Performance Computing (C++, MPI, OpenMP)
-      - Numerical Methods for Partial Differential Equations (Finite Element Method)
-      - Numerical Solution of Stochastic Ordinary Differential Equations (Itô calculus)
-      - Computational Quantum Physics (Quantum multi-body problems)
-      - Statistical Physics and Computer Simulation (Molecular Dynamics)
+      - High-Performance Computing (Distributed Computing, MPI, OpenMP)
+      - Numerical Methods for Partial Differential Equations (Finite Element Method, Functional Analysis)
+      - Numerical Solution of Stochastic Ordinary Differential Equations (Itô calculus, Euler–Maruyama)
+      - Computational Quantum Physics (Multi-Body Problems, Tensor Network States)
+      - Statistical Physics and Computer Simulation (Molecular Dynamics, Thermodynamics)
       //- Systems Programming and Computer Architecture
   ]
 )
@@ -144,10 +150,10 @@
 #cv-entry(
   [Teaching Assistant NumPDE],
   [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
-  [2024],
+  [February -- June 2024],
   [
     - TA for "Numerical Methods for Partial Differential Equations" (Prof. Ralf Hiptmair)
-    - Instructed students in Weekly Tutorials on Mathematical Theory and C++ Implementation
+    - Instructed Students in Weekly Tutorials on Mathematical Theory and C++ Implementation
   ]
 )
 
@@ -186,6 +192,16 @@
   ]
 )
 
+#pagebreak(weak: true)
+
+#section-header("Skills")
+
+- Languages: Rust, C/C++, Python, Lean4, SystemVerilog, WGSL, GLSL
+- Technologies: MPI, OpenMP, Eigen, PETSc, NumPy, PyTorch, JAX, Vulkan, WebGPU, WebAssembly, Tokio, Serde
+- Tools: Linux, Nix, Git, Cadence Virtuoso, Xilinx Vivado, Typst, LaTeX
+- Math: Finite Element Methods, Boundary Element Methods, Discrete Differential Geometry, Functional Analysis, Algebraic Topology
+
+
 #section-header("Publications & Talks")
 
 #talk-entry(
@@ -218,9 +234,10 @@
   [Rust, FEEC, Differential Geometry],
   [Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
   [
-    - Support for Arbitrary Dimensional Manifolds with Non-Trivial Topology
-    - Any Rank Differential Forms
     - Solves Hodge-Laplace Source and Eigenvalue Problems
+    - Support for Arbitrary Dimensional Manifolds with Non-Trivial Topology
+    - Support for Arbitrary Rank Differential Forms
+    - Sophisticated Data Structures for Mesh and Exterior Algebra using Multi-Indices
     - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
   ]
 )
@@ -228,39 +245,39 @@
 #project-entry(
   [Carveout],
   [Rust, Rendering, WebGPU, WebAssembly],
-  [High-performance Digital Pen Note-Taking Application],
+  [High-Performance Digital Pen Note-Taking Application],
   [
-    - Custom Rendering with WebGPU for Cross-Platform Hardware Acceleration
-    - Custom egui-winit-wgpu Integration and OSS Contributions
-    - WASM / WebAssembly App
+    - Non-Linear Undo-Tree Data Structure to Preserve Full Editing History Across Branches
+    - Rendering with WebGPU for Cross-Platform Hardware Acceleration
+    - WebAssembly App with Custom egui-winit-wgpu Integration
     - Repository: #weblink("https://github.com/luiswirth/carveout")[GitHub]
   ]
 )
 
 #project-entry(
-  [UTTT],
-  [Rust, Async, Tokio, Networking, Type-Level Abstraction],
-  [Implementation of Ultimate Tic-Tac-Toe],
+  [Arcus],
+  [Rust, Embedded Programming, RTIC, Microcontroller],
+  [Smart LED strip with interactive animations],
   [
-    - Arbitrarily Deep Board Nesting, thanks to Generic Programming
-    - A Networked Server-Client Multiplayer Game
-    - Async Rust and Tokio for Concurrent Client Handling
-    - Serde for Serialization
-    - Repository: #weblink("https://github.com/luiswirth/uttt")[GitHub]
+    - Embedded Rust based on Real-Time Interrupt-Driven Concurrency (RTIC)
+    - Raspberry Pi Pico RP2040 Microcontroller
+    - Programmable IO State Machine Driver for WS2812 LEDs using PIO Assembly
+    - Controller Support for UART, Bluetooth and Infrared Remote
+    - Repository: #weblink("https://github.com/luiswirth/arcus")[GitHub]
   ]
 )
 
 #project-entry(
-  [arcus],
-  [Rust, Embedded Programming, RTIC, Microcontroller],
-  [Smart LED strip with interactive animations],
+  [UTTT],
+  [Rust, Networking, Type-Level Abstraction],
+  [Implementation of Ultimate Tic-Tac-Toe],
   [
-    - Embedded Rust based on Real-Time Interrupt-driven Concurrency (RTIC)
-    - Raspberry Pi Pico RP2040 Microcontroller
-    - Programmable IO State Machine for Neopixel WS2812 LEDs using PIO Assembly
-    - Controller Support for UART, Bluetooth and Infrared Remote
-    - Fixed-point Arithmetic
-    - Repository: #weblink("https://github.com/luiswirth/arcus")[GitHub]
+
+  
+    - Networked Multiplayer Server using standard TCP Stream Handling
+    - Recursive Game State Abstraction allowing Arbitrarily Deep Board Nestings
+    - egui for Rendering and Serde for Serialization
+    - Repository: #weblink("https://github.com/luiswirth/uttt")[GitHub]
   ]
 )
 
@@ -276,14 +293,4 @@
     - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
   ],
 )
-
-//#project-entry(
-//  "Dotnix",
-//  "NixOS, Flakes",
-//  [Personal NixOS system configuration],
-//  [
-//    - Reproducible development environments using Nix ecosystem
-//    - Repository: #weblink("https://github.com/luiswirth/dotnix")[GitHub]
-//  ]
-//)
 
