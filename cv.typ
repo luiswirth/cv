@@ -29,7 +29,7 @@
 
 #let cv-entry(title, org, date, details) = {
   grid(
-    columns: (15%, 85%),
+    columns: (15%, auto),
     gutter: 1em,
     text(style: "italic", fill: gray.darken(30%), date),
     stack(
@@ -150,7 +150,7 @@
 #cv-entry(
   [Teaching Assistant NumPDE],
   [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
-  [February -- June 2024],
+  [2024\ February -- June],
   [
     - TA for "Numerical Methods for Partial Differential Equations" (Prof. Ralf Hiptmair)
     - Instructed Students in Weekly Tutorials on Mathematical Theory and C++ Implementation
@@ -160,7 +160,7 @@
 #cv-entry(
   [R&D Software Engineer],
   [University of Basel (Dept. of Biomedical Engineering) -- Basel, CH],
-  [June -- December 2020],
+  [2020\ June -- December],
   [
     - MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided LaserosteotomE)
     - Development on SpectoVR, a Virtual Reality Surgical Planning Tool
@@ -172,7 +172,7 @@
 #cv-entry(
   [Software Engineer Intern],
   [Adobe -- San Francisco, USA],
-  [July -- August 2019],
+  [2019\ July -- August],
   [
     - Member of the "Screens" team for Adobe Experience Manager
     - Contributed to Enterprise-Scale Digital Signage Software
@@ -183,7 +183,7 @@
 #cv-entry(
   [Computational Physicist Intern],
   [University of Basel (Dept. of Physics) -- Basel, CH],
-  [July 2018],
+  [2018\ July -- July],
   [
     - Applied Machine Learning to Problem in Computational Chemistry
     - Predicted the Energy of Various Configurations of the Water Molecule
