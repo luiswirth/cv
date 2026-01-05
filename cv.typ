@@ -78,7 +78,7 @@
   ] \
   #v(0.5em)
   #weblink("mailto:luwirth@ethz.ch") |
-  #weblink("lwirth.com") \
+  #weblink("http://lwirth.com")[lwirth.com] \
   #weblink("https://www.linkedin.com/in/luis-wirth-256618172/")[LinkedIn] |
   #weblink("https://github.com/luiswirth")[GitHub] |
   #weblink("https://www.youtube.com/@luiswirth")[YouTube]
