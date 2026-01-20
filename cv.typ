@@ -74,7 +74,7 @@
   #v(0.5em)
   #text(size: 11pt)[
     *MSc Student in Computational Science and Engineering at ETH Zürich* \
-    Specialized in Computational Physics, Numerical Analysis and High-Performance Computing
+    Specialized in Computational Physics, High-Performance Computing and Hardware Systems
   ] \
   #v(0.5em)
   #weblink("mailto:luwirth@ethz.ch") |
@@ -96,10 +96,10 @@
     //- *Major:* Computational Electromagnetics
     - *Key Coursework:*
       - AI in the Sciences and Engineering (PINNs, Neural Operators, Diffusion Models, Physics Foundation Models)
-      - Advanced Numerical Methods for CSE (Boundary Element Method and Gaussian Processes for PDEs)
-      - VLSI 1: HDL Based Design for FPGAs (Xilinx Vivado, SystemVerilog)
-      - VLSI 3: Full-Custom Digital Circuit Design (Cadence Virtuoso, Schematic, Layout)
-      - Neuromorphic Engineering I (Analog VLSI)
+      - Advanced Numerical Methods for CSE (Boundary Element Method, Gaussian Processes for PDEs)
+      - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
+      - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
+      - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
   ]
 )
 
@@ -152,7 +152,7 @@
   [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
   [2024\ February -- June],
   [
-    - TA for "Numerical Methods for Partial Differential Equations" (Prof. Ralf Hiptmair)
+    - TA for "Numerical Methods for Partial Differential Equations" (Prof. R. Hiptmair)
     - Instructed Students in Weekly Tutorials on Mathematical Theory and C++ Implementation
   ]
 )
@@ -163,7 +163,7 @@
   [2020\ June -- December],
   [
     - MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided LaserosteotomE)
-    - Development on SpectoVR, a Virtual Reality Surgical Planning Tool
+    - Contributed to the Development of SpectoVR, a Virtual Reality Surgical Planning Tool
     - High-Performance Multi-Volume Rendering using Raymarching Compute Shaders (GPU)
     - Visualization of PET/CT scans
   ]
@@ -174,7 +174,7 @@
   [Adobe -- San Francisco, USA],
   [2019\ July -- August],
   [
-    - Member of the "Screens" team for Adobe Experience Manager
+    - Member of the Screens Team for Adobe Experience Manager
     - Contributed to Enterprise-Scale Digital Signage Software
     - Content Targeting using Machine Learning with TensorFlow
   ]
@@ -185,22 +185,14 @@
   [University of Basel (Dept. of Physics) -- Basel, CH],
   [2018\ July -- July],
   [
-    - Applied Machine Learning to Problem in Computational Chemistry
+    - Applied Machine Learning Techniques to a Problem in Computational Chemistry
     - Predicted the Energy of Various Configurations of the Water Molecule
-    - Custom Neural Network Implementation in C++/Eigen with Backpropagation
-    - "Extraordinary performance for a high school student" - Prof. Stefan Goedecker
+    - Custom Neural Network Backpropagation Implementation in C++/Eigen
+    - _"Extraordinary performance for a high school student"_ - Prof. S. Goedecker
   ]
 )
 
 #pagebreak(weak: true)
-
-#section-header("Skills")
-
-- Languages: Rust, C/C++, Python, Lean4, SystemVerilog, WGSL, GLSL
-- Technologies: MPI, OpenMP, Eigen, PETSc, NumPy, PyTorch, JAX, Vulkan, WebGPU, WebAssembly, Tokio, Serde
-- Tools: Linux, Nix, Git, Cadence Virtuoso, Xilinx Vivado, Typst, LaTeX
-- Math: Finite Element Methods, Boundary Element Methods, Discrete Differential Geometry, Functional Analysis, Algebraic Topology
-
 
 #section-header("Publications & Talks")
 
@@ -209,8 +201,8 @@
   [ETH Zürich],
   [May 2025],
   [
-    - Supervisor: Prof. Dr. Ralf Hiptmair
-    - Topics: PDEs, FEM, Differential Geometry, Differential Forms, de Rham Cohomology
+    - _"The best BSc thesis I have seen in years"_ - Prof. R. Hiptmair
+    - Topics: PDEs, FEM, Differential Geometry, de Rham Cohomology, Regge Calculus
     - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv]
     - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
   ]
@@ -222,7 +214,7 @@
   [November 2024],
   [
     - Topics: Functional Programming, Type Theory, Propositions-as-Types and Formal Verification\
-    - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube] 
+    - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube]
   ]
 )
 
@@ -247,7 +239,7 @@
   [Rust, Rendering, WebGPU, WebAssembly],
   [High-Performance Digital Pen Note-Taking Application],
   [
-    - Non-Linear Undo-Tree Data Structure to Preserve Full Editing History Across Branches
+    - Nonlinear Undo-Tree Data Structure to Preserve Full Editing History Across Branches
     - Rendering with WebGPU for Cross-Platform Hardware Acceleration
     - WebAssembly App with Custom egui-winit-wgpu Integration
     - Repository: #weblink("https://github.com/luiswirth/carveout")[GitHub]
@@ -257,7 +249,7 @@
 #project-entry(
   [Arcus],
   [Rust, Embedded Programming, RTIC, Microcontroller],
-  [Smart LED strip with interactive animations],
+  [Smart LED Strip with Interactive Animations],
   [
     - Embedded Rust based on Real-Time Interrupt-Driven Concurrency (RTIC)
     - Raspberry Pi Pico RP2040 Microcontroller
@@ -272,8 +264,6 @@
   [Rust, Networking, Type-Level Abstraction],
   [Implementation of Ultimate Tic-Tac-Toe],
   [
-
-  
     - Networked Multiplayer Server using standard TCP Stream Handling
     - Recursive Game State Abstraction allowing Arbitrarily Deep Board Nestings
     - egui for Rendering and Serde for Serialization
@@ -284,7 +274,7 @@
 #project-entry(
   [lwirth-lib],
   [C++, Rendering, Vulkan API, Neural Networks],
-  [General Purpose Library and Graphics Engine in C++17],
+  [General-Purpose Library and Graphics Engine in C++17],
   [
     - Vulkan Rendering Engine
     - Neural Network Implementation using Eigen
@@ -293,4 +283,14 @@
     - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
   ],
 )
+
+#section-header("Skills")
+
+- Languages: C++, Rust, Python, Lean4, SystemVerilog, WGSL, GLSL
+- HPC: MPI, OpenMP, PETSc
+- ML Frameworks: PyTorch, JAX
+- Graphics / GPU: Vulkan, WebGPU, Compute Shaders
+- EDA / Hardware: Cadence Virtuoso, Xilinx Vivado
+- Tooling: Linux, Nix, Git, Typst, LaTeX
+
 
