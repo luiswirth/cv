@@ -92,11 +92,11 @@
   [ETH Zürich -- Zürich, CH],
   [2025 -- (2027)],
   [
-    //- *GPA:* ?/6.0
-    //- *Major:* Computational Electromagnetics
+    - *GPA:* 5.57/6.0
+    - *Major:* Computational Electromagnetics
     - *Key Coursework:*
       - AI in the Sciences and Engineering (PINNs, Neural Operators, Diffusion Models, Physics Foundation Models)
-      - Advanced Numerical Methods for CSE (Boundary Element Method, Gaussian Processes for PDEs)
+      - Advanced Numerical Methods for CSE (Boundary Element Method, Hybrid Modeling for PDEs, GPs)
       - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
       - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
       - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
@@ -164,8 +164,8 @@
   [
     - MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided LaserosteotomE)
     - Contributed to the Development of SpectoVR, a Virtual Reality Surgical Planning Tool
-    - High-Performance Multi-Volume Rendering using Raymarching Compute Shaders (GPU)
-    - Visualization of PET/CT scans
+    - Implemented High-Performance Multi-Volume Rendering using Raymarching Compute Shaders (GPU)
+    - Added support for Visualization of PET-CT scans
   ]
 )
 
@@ -176,7 +176,7 @@
   [
     - Member of the Screens Team for Adobe Experience Manager
     - Contributed to Enterprise-Scale Digital Signage Software
-    - Content Targeting using Machine Learning with TensorFlow
+    - Created a Content Targeting Prototype using Machine Learning with TensorFlow
   ]
 )
 
