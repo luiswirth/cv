@@ -25,11 +25,18 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v3
 
+      - name: Download Fonts
+        run: |
+          mkdir fonts
+          wget -q -O fonts/NewCMSans10-Regular.otf https://mirrors.ctan.org/fonts/newcomputermodern/otf/NewCMSans10-Regular.otf
+          wget -q -O fonts/NewCMSans10-Bold.otf https://mirrors.ctan.org/fonts/newcomputermodern/otf/NewCMSans10-Bold.otf
+          wget -q -O fonts/NewCMSans10-Oblique.otf https://mirrors.ctan.org/fonts/newcomputermodern/otf/NewCMSans10-Oblique.otf
+
       - name: Compile Typst
         run: |
           mkdir public
           # Replace 'cv.typ' with your actual filename
-          typst compile cv.typ public/cv.pdf
+          typst compile cv.typ public/cv.pdf --font-path fonts
 
       - name: Create Landing Page
         run: |
