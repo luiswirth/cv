@@ -74,7 +74,7 @@
   #v(0.5em)
   #text(size: 11pt)[
     *MSc Student in Computational Science and Engineering at ETH Zürich* \
-    Specialized in Computational Physics, High-Performance Computing and Hardware Systems
+    Specialized in Computational Physics, High-Performance Computing and Device-Physics
   ] \
   #v(0.5em)
   #weblink("mailto:luwirth@ethz.ch") |
@@ -93,13 +93,18 @@
   [2025 -- (2027)],
   [
     - *GPA:* 5.64/6.0
-    - *Major:* Computational Electromagnetics
+    - *Specialization:* Computational Electromagnetics
     - *Key Coursework:*
-      - AI in the Sciences and Engineering (PINNs, Neural Operators, Diffusion Models, Physics Foundation Models)
+      - AI in the Sciences and Engineering (PINNs, Graph Neural Operators, Physics Foundation Models)
       - Advanced Numerical Methods for CSE (Boundary Element Method, Hybrid Modeling for PDEs, GPs)
-      - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
-      - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
+      - Electromagnetics and Differential Forms (Differentiable Manifolds, De Rham Complex, DF Discretization)
+      //- Nano-Optics (sub-wavelength scale, super-resolution)
+      - Semiconductor Devices: Quantum Transport at the Nanoscale (Transistor-Level Simulation, NEGF)
+      //- Brain Inspired Computing: Bridging Device Physics to Real-World Applications (Memristor Device Physics)
       - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
+      - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
+      - VLSI 2: From Netlist to Complete System on Chip (Chip Design Project)
+      - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
   ]
 )
 
@@ -109,15 +114,15 @@
   [2021 -- 2025],
   [
     - *GPA:* 5.41/6.0
-    - *Major:* Computational Physics
+    - *Specialization:* Computational Physics
     - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes
     - *Key Coursework:*
-      - High-Performance Computing (Distributed Computing, MPI, OpenMP)
-      - Numerical Methods for Partial Differential Equations (Finite Element Method, Functional Analysis)
+      - Numerical Methods for Partial Differential Equations (Finite Element Method)
       - Numerical Solution of Stochastic Ordinary Differential Equations (Itô calculus, Euler–Maruyama)
       - Computational Quantum Physics (Multi-Body Problems, Tensor Network States)
       - Statistical Physics and Computer Simulation (Molecular Dynamics, Thermodynamics)
-      //- Systems Programming and Computer Architecture
+      - High-Performance Computing (Distributed Computing, MPI, OpenMP)
+      - Systems Programming and Computer Architecture
   ]
 )
 
@@ -188,7 +193,6 @@
     - Applied Machine Learning Techniques to a Problem in Computational Chemistry
     - Predicted the Energy of Various Configurations of the Water Molecule
     - Custom Neural Network Backpropagation Implementation in C++/Eigen
-    - _"Extraordinary performance for a high school student"_ - Prof. S. Goedecker
   ]
 )
 
