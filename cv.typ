@@ -92,7 +92,7 @@
   [ETH Zürich -- Zürich, CH],
   [2025 -- (2027)],
   [
-    - *GPA:* 5.57/6.0
+    - *GPA:* 5.64/6.0
     - *Major:* Computational Electromagnetics
     - *Key Coursework:*
       - AI in the Sciences and Engineering (PINNs, Neural Operators, Diffusion Models, Physics Foundation Models)
