@@ -95,12 +95,11 @@
     - *GPA:* 5.64/6.0
     - *Specialization:* Computational Electromagnetics
     - *Key Coursework:*
+      - Computational and Statistical Aspects of Diffusion Models (Langevin Dynamics, Markov Chain Monte Carlo)
       - AI in the Sciences and Engineering (PINNs, Graph Neural Operators, Physics Foundation Models)
       - Advanced Numerical Methods for CSE (Boundary Element Method, Hybrid Modeling for PDEs, GPs)
       - Electromagnetics and Differential Forms (Differentiable Manifolds, De Rham Complex, DF Discretization)
-      //- Nano-Optics (sub-wavelength scale, super-resolution)
       - Semiconductor Devices: Quantum Transport at the Nanoscale (Transistor-Level Simulation, NEGF)
-      //- Brain Inspired Computing: Bridging Device Physics to Real-World Applications (Memristor Device Physics)
       - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
       - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
       - VLSI 2: From Netlist to Complete System on Chip (Chip Design Project)
