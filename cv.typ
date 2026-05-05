@@ -29,7 +29,7 @@
 
 #let cv-entry(title, org, date, details) = {
   grid(
-    columns: (15%, auto),
+    columns: (12%, auto),
     gutter: 1em,
     text(style: "italic", fill: gray.darken(30%), date),
     stack(
@@ -71,17 +71,14 @@
 // --- Header ---
 #align(center)[
   #text(size: 24pt, weight: "bold")[Luis Wirth] \
-  #v(0.5em)
   #text(size: 11pt)[
     *MSc Student in Computational Science and Engineering at ETH Zürich* \
-    Specialized in Computational Physics, High-Performance Computing and Device-Physics
-  ] \
-  #v(0.5em)
+  ]
+  #v(0.2em)
   #weblink("mailto:luwirth@ethz.ch") |
   #weblink("http://lwirth.com")[lwirth.com] \
   #weblink("https://www.linkedin.com/in/luis-wirth-256618172/")[LinkedIn] |
-  #weblink("https://github.com/luiswirth")[GitHub] |
-  #weblink("https://www.youtube.com/@luiswirth")[YouTube]
+  #weblink("https://github.com/luiswirth")[GitHub]
 ]
 
 // --- Education ---
@@ -93,7 +90,8 @@
   [2025 -- (2027)],
   [
     - *GPA:* 5.64/6.0
-    - *Specialization:* Computational Electromagnetics
+    - *Specialization:* Computational Physics & Scientific Machine Learning
+    - *Semester Project*: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations (Kurz)
     - *Key Coursework:*
       - Computational and Statistical Aspects of Diffusion Models (Langevin Dynamics, Markov Chain Monte Carlo)
       - AI in the Sciences and Engineering (PINNs, Graph Neural Operators, Physics Foundation Models)
@@ -114,7 +112,7 @@
   [
     - *GPA:* 5.41/6.0
     - *Specialization:* Computational Physics
-    - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes
+    - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes (Hiptmair)
     - *Key Coursework:*
       - Numerical Methods for Partial Differential Equations (Finite Element Method)
       - Numerical Solution of Stochastic Ordinary Differential Equations (Itô calculus, Euler–Maruyama)
@@ -199,14 +197,25 @@
 
 #section-header("Publications & Talks")
 
+
+#talk-entry(
+  [Semester Project: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations],
+  [ETH Zürich],
+  [in progress],
+  [
+    - Supervisor: Prof. Dr.-Ing. Stefan Kurz
+    - Topics: Maxwell's Equations, Boundary Element Method, AI4science, Gaussian Processes, Exterior Calculus
+  ]
+)
+
 #talk-entry(
   [BSc Thesis: Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
   [ETH Zürich],
   [May 2025],
   [
     - _"The best BSc thesis I have seen in years"_ - Prof. R. Hiptmair
-    - Topics: PDEs, FEM, Differential Geometry, de Rham Cohomology, Regge Calculus
-    - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv]
+    - Topics: PDEs, FEM, Differential Geometry, Exterior Calculus, de Rham Cohomology, Regge Calculus
+    - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv:2506.02429]
     - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
   ]
 )
@@ -274,22 +283,22 @@
   ]
 )
 
-#project-entry(
-  [lwirth-lib],
-  [C++, Rendering, Vulkan API, Neural Networks],
-  [General-Purpose Library and Graphics Engine in C++17],
-  [
-    - Vulkan Rendering Engine
-    - Neural Network Implementation using Eigen
-    - Dynamic Array, Pool and Stack Allocators
-    - Custom Templated Linear Algebra module
-    - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
-  ],
-)
+//#project-entry(
+//  [lwirth-lib],
+//  [C++, Rendering, Vulkan API, Neural Networks],
+//  [General-Purpose Library and Graphics Engine in C++17],
+//  [
+//    - Vulkan Rendering Engine
+//    - Neural Network Implementation using Eigen
+//    - Dynamic Array, Pool and Stack Allocators
+//    - Custom Templated Linear Algebra module
+//    - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
+//  ],
+//)
 
 #section-header("Skills")
 
-- Languages: C++, Rust, Python, Lean4, SystemVerilog, WGSL, GLSL
+- Languages: C++, Rust, Python, Lean4, Julia, SystemVerilog
 - HPC: MPI, OpenMP, PETSc
 - ML Frameworks: PyTorch, JAX
 - Graphics / GPU: Vulkan, WebGPU, Compute Shaders
