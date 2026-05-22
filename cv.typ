@@ -100,9 +100,9 @@
     - *Semester Project*: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations (Kurz)
     - *Key Coursework:*
       // always adjust to specific application
-      - CSCS Summer School#pr (HPC, CUDA, MPI)
       - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
       - AI in the Sciences and Engineering (PINNs, Graph Neural Operators, Physics Foundation Models)
+      - CSCS Summer School#pr (HPC, CUDA, MPI)
       - Advanced Numerical Methods for CSE (Boundary Element Method, Hybrid Modeling for PDEs, GPs)
       - Electromagnetics and Differential Forms#pr (Differentiable Manifolds, De Rham Complex, DF Discretization)
       - Semiconductor Devices: Quantum Transport at the Nanoscale#pr (Transistor-Level Simulation, NEGF)
@@ -122,16 +122,17 @@
   [
     - *GPA:* 5.41/6.0
     - *Field of specialization:* Computational Physics
-    - *Focus:* Finite Element Method
+    - *Focus:* Finite Element Exterior Calculus
     - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes (Hiptmair)
     - *Key Coursework:*
       // always adjust to specific application
-      - Numerical Methods for Partial Differential Equations (Finite Element Method)
+      - Numerical Methods for Partial Differential Equations (Finite Element Method, Conservation Laws)
       - Numerical Solution of Stochastic Ordinary Differential Equations (Itô calculus, Euler–Maruyama)
       - Computational Quantum Physics (Multi-Body Problems, Tensor Network States)
       - Statistical Physics and Computer Simulation (Molecular Dynamics, Thermodynamics)
       - High-Performance Computing (Distributed Computing, MPI, OpenMP)
-      - Systems Programming and Computer Architecture
+      - Systems Programming and Computer Architecture (C, x86-64 Assembly, Virtual Memory, Caching)
+      - Information Theory (Shannon Entropy, Mutual Information, Coding, Typical Sequences)
   ]
 )
 
