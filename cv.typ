@@ -97,7 +97,7 @@
     - *GPA:* 5.64/6.0
     - *Field of specialization:* Computational Electromagnetics
     - *Focus:* Physics-Informed Machine Learning
-    - *Semester Project*: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations (Kurz)
+    - *Semester Project*: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations
     - *Key Coursework:*
       // always adjust to specific application
       - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
@@ -123,7 +123,7 @@
     - *GPA:* 5.41/6.0
     - *Field of specialization:* Computational Physics
     - *Focus:* Finite Element Exterior Calculus
-    - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes (Hiptmair)
+    - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes
     - *Key Coursework:*
       // always adjust to specific application
       - Numerical Methods for Partial Differential Equations (Finite Element Method, Conservation Laws)
