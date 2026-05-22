@@ -84,7 +84,7 @@
   #weblink("https://github.com/luiswirth")[GitHub]
 ]
 
-#v(-0.5cm)
+#v(-0.7cm)
 
 // --- Education ---
 #section-header("Education")
@@ -159,6 +159,8 @@
 )
 */
 
+
+#v(-0.3cm)
 
 #section-header("Professional Experience")
 
