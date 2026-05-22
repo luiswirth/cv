@@ -29,7 +29,7 @@
 
 #let cv-entry(title, org, date, details) = {
   grid(
-    columns: (12%, auto),
+    columns: (10%, auto),
     gutter: 1em,
     text(style: "italic", fill: gray.darken(30%), date),
     stack(
@@ -68,6 +68,9 @@
   )
 }
 
+#let pr-sym = [\*]
+#let pr = [#super[#pr-sym]]
+
 // --- Header ---
 #align(center)[
   #text(size: 24pt, weight: "bold")[Luis Wirth] \
@@ -81,6 +84,8 @@
   #weblink("https://github.com/luiswirth")[GitHub]
 ]
 
+#v(-0.5cm)
+
 // --- Education ---
 #section-header("Education")
 
@@ -90,18 +95,23 @@
   [2025 -- (2027)],
   [
     - *GPA:* 5.64/6.0
-    - *Specialization:* Computational Physics & Scientific Machine Learning
+    - *Field of specialization:* Computational Electromagnetics
+    - *Focus:* Physics-Informed Machine Learning
     - *Semester Project*: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations (Kurz)
     - *Key Coursework:*
-      - Computational and Statistical Aspects of Diffusion Models (Langevin Dynamics, Markov Chain Monte Carlo)
+      // always adjust to specific application
+      - CSCS Summer School#pr (HPC, CUDA, MPI)
+      - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
       - AI in the Sciences and Engineering (PINNs, Graph Neural Operators, Physics Foundation Models)
       - Advanced Numerical Methods for CSE (Boundary Element Method, Hybrid Modeling for PDEs, GPs)
-      - Electromagnetics and Differential Forms (Differentiable Manifolds, De Rham Complex, DF Discretization)
-      - Semiconductor Devices: Quantum Transport at the Nanoscale (Transistor-Level Simulation, NEGF)
+      - Electromagnetics and Differential Forms#pr (Differentiable Manifolds, De Rham Complex, DF Discretization)
+      - Semiconductor Devices: Quantum Transport at the Nanoscale#pr (Transistor-Level Simulation, NEGF)
       - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
       - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
-      - VLSI 2: From Netlist to Complete System on Chip (Chip Design Project)
+      - VLSI 2: From Netlist to Complete System on Chip#pr (Full-Custom HFT ASIC Project)
       - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
+
+    #text(size: 7pt, fill: gray.darken(20%), style: "italic")[#pr-sym currently enrolled]
   ]
 )
 
@@ -111,9 +121,11 @@
   [2021 -- 2025],
   [
     - *GPA:* 5.41/6.0
-    - *Specialization:* Computational Physics
+    - *Field of specialization:* Computational Physics
+    - *Focus:* Finite Element Method
     - *Thesis:* Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes (Hiptmair)
     - *Key Coursework:*
+      // always adjust to specific application
       - Numerical Methods for Partial Differential Equations (Finite Element Method)
       - Numerical Solution of Stochastic Ordinary Differential Equations (Itô calculus, Euler–Maruyama)
       - Computational Quantum Physics (Multi-Body Problems, Tensor Network States)
@@ -155,7 +167,7 @@
   [2024\ February -- June],
   [
     - TA for "Numerical Methods for Partial Differential Equations" (Prof. R. Hiptmair)
-    - Instructed Students in Weekly Tutorials on Mathematical Theory and C++ Implementation
+    - Instructed students in weekly tutorials on mathematical theory and C++ implementation
   ]
 )
 
@@ -164,10 +176,11 @@
   [University of Basel (Dept. of Biomedical Engineering) -- Basel, CH],
   [2020\ June -- December],
   [
-    - MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided LaserosteotomE)
-    - Contributed to the Development of SpectoVR, a Virtual Reality Surgical Planning Tool
-    - Implemented High-Performance Multi-Volume Rendering using Raymarching Compute Shaders (GPU)
-    - Added support for Visualization of PET-CT scans
+    - Joined the MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided Laserosteotome)
+    - Developed SpectoVR, a virtual reality surgical planning tool
+    - Implemented real-time multi-volume raymarching with distance-field 
+      empty-space skipping for CT/MRI scans
+    - Added PET-CT scan visualization support
   ]
 )
 
@@ -176,20 +189,20 @@
   [Adobe -- San Francisco, USA],
   [2019\ July -- August],
   [
-    - Member of the Screens Team for Adobe Experience Manager
-    - Contributed to Enterprise-Scale Digital Signage Software
-    - Created a Content Targeting Prototype using Machine Learning with TensorFlow
+    - Joined the Adobe Experience Manager Screens team
+    - Built a content targeting prototype using TensorFlow for personalized
+      digital signage delivery
   ]
 )
 
 #cv-entry(
   [Computational Physicist Intern],
   [University of Basel (Dept. of Physics) -- Basel, CH],
-  [2018\ July -- July],
+  [2018\ July],
   [
-    - Applied Machine Learning Techniques to a Problem in Computational Chemistry
-    - Predicted the Energy of Various Configurations of the Water Molecule
-    - Custom Neural Network Backpropagation Implementation in C++/Eigen
+    - Implemented a custom neural network with backpropagation in C++/Eigen
+    - Trained the model to predict the potential energies of the water 
+      molecule from atomic configurations
   ]
 )
 
@@ -213,7 +226,7 @@
   [ETH Zürich],
   [May 2025],
   [
-    - _"The best BSc thesis I have seen in years"_ - Prof. R. Hiptmair
+    - _"The best BSc thesis I have seen in years"_ --- Prof. R. Hiptmair
     - Topics: PDEs, FEM, Differential Geometry, Exterior Calculus, de Rham Cohomology, Regge Calculus
     - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv:2506.02429]
     - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
@@ -225,7 +238,7 @@
   [ETH Zürich (ZUCCMAP)],
   [November 2024],
   [
-    - Topics: Functional Programming, Type Theory, Propositions-as-Types and Formal Verification\
+    - Topics: Functional Programming, Type Theory, Propositions-as-Types and Formal Verification
     - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube]
   ]
 )
@@ -238,10 +251,11 @@
   [Rust, FEEC, Differential Geometry],
   [Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
   [
-    - Solves Hodge-Laplace Source and Eigenvalue Problems
-    - Support for Arbitrary Dimensional Manifolds with Non-Trivial Topology
-    - Support for Arbitrary Rank Differential Forms
-    - Sophisticated Data Structures for Mesh and Exterior Algebra using Multi-Indices
+    - Solves Hodge-Laplace source and eigenvalue problems
+    - Support for arbitrary dimensional manifolds with non-trivial topology
+    - Support for arbitrary rank differential forms
+    - Sophisticated data structures for simplicial mesh and exterior algebra using multi-indices
+    - \~6k LOC of Rust, PETSc/SLEPc solver backend
     - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
   ]
 )
@@ -251,9 +265,9 @@
   [Rust, Rendering, WebGPU, WebAssembly],
   [High-Performance Digital Pen Note-Taking Application],
   [
-    - Nonlinear Undo-Tree Data Structure to Preserve Full Editing History Across Branches
-    - Rendering with WebGPU for Cross-Platform Hardware Acceleration
-    - WebAssembly App with Custom egui-winit-wgpu Integration
+    - Nonlinear undo-tree data structure to preserve full editing history across branches
+    - Rendering with WebGPU for cross-platform hardware acceleration
+    - WebAssembly app with custom egui-winit-wgpu integration
     - Repository: #weblink("https://github.com/luiswirth/carveout")[GitHub]
   ]
 )
@@ -263,10 +277,10 @@
   [Rust, Embedded Programming, RTIC, Microcontroller],
   [Smart LED Strip with Interactive Animations],
   [
-    - Embedded Rust based on Real-Time Interrupt-Driven Concurrency (RTIC)
-    - Raspberry Pi Pico RP2040 Microcontroller
-    - Programmable IO State Machine Driver for WS2812 LEDs using PIO Assembly
-    - Controller Support for UART, Bluetooth and Infrared Remote
+    - Embedded Rust based on real-time interrupt-driven concurrency (RTIC)
+    - Raspberry Pi Pico RP2040 microcontroller
+    - Programmable IO state machine driver for WS2812 LEDs using PIO assembly
+    - Controller support for UART, bluetooth and infrared remote
     - Repository: #weblink("https://github.com/luiswirth/arcus")[GitHub]
   ]
 )
@@ -276,9 +290,9 @@
   [Rust, Networking, Type-Level Abstraction],
   [Implementation of Ultimate Tic-Tac-Toe],
   [
-    - Networked Multiplayer Server using standard TCP Stream Handling
-    - Recursive Game State Abstraction allowing Arbitrarily Deep Board Nestings
-    - egui for Rendering and Serde for Serialization
+    - Networked multiplayer server using standard TCP stream handling
+    - Recursive game state abstraction allowing arbitrarily deep board nestings
+    - egui for rendering and Serde for serialization
     - Repository: #weblink("https://github.com/luiswirth/uttt")[GitHub]
   ]
 )
@@ -288,16 +302,17 @@
 //  [C++, Rendering, Vulkan API, Neural Networks],
 //  [General-Purpose Library and Graphics Engine in C++17],
 //  [
-//    - Vulkan Rendering Engine
-//    - Neural Network Implementation using Eigen
-//    - Dynamic Array, Pool and Stack Allocators
-//    - Custom Templated Linear Algebra module
+//    - Vulkan rendering engine
+//    - Neural network implementation using Eigen
+//    - Dynamic array, pool and stack allocators
+//    - Custom templated linear algebra module
 //    - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
 //  ],
 //)
 
 #section-header("Skills")
 
+*Technical:*
 - Languages: C++, Rust, Python, Lean4, Julia, SystemVerilog
 - HPC: MPI, OpenMP, PETSc
 - ML Frameworks: PyTorch, JAX
@@ -305,4 +320,4 @@
 - EDA / Hardware: Cadence Virtuoso, Xilinx Vivado
 - Tooling: Linux, Nix, Git, Typst, LaTeX
 
-
+*Spoken Languages:* German (native), English (C2), Spanish (A2), French (A2)
