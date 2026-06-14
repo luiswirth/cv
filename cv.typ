@@ -323,4 +323,4 @@
 - EDA / Hardware: Cadence Virtuoso, Xilinx Vivado
 - Tooling: Linux, Nix, Git, Typst, LaTeX
 
-*Spoken Languages:* German (native), English (C2), Spanish (A2), French (A2)
+*Spoken Languages:* German (native), English (C2), French (B1), Spanish (A2)
