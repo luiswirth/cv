@@ -78,10 +78,11 @@
     *MSc Student in Computational Science and Engineering at ETH Zürich* \
   ]
   #v(0.2em)
-  #weblink("mailto:luwirth@ethz.ch") |
-  #weblink("http://lwirth.com")[lwirth.com] \
-  #weblink("https://www.linkedin.com/in/luis-wirth-256618172/")[LinkedIn] |
-  #weblink("https://github.com/luiswirth")[GitHub]
+  #weblink("https://lwirth.com")[lwirth.com] |
+  #weblink("mailto:luwirth@ethz.ch") \
+  #weblink("https://lwirth.com/linkedin")[LinkedIn] |
+  #weblink("https://lwirth.com/github")[GitHub] |
+  #weblink("https://lwirth.com/youtube")[YouTube]
 ]
 
 #v(-0.7cm)
