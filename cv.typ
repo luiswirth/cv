@@ -212,8 +212,75 @@
 
 #pagebreak(weak: true)
 
-#section-header("Publications & Talks")
+#section-header("Technical Projects & Open-Source")
 
+#project-entry(
+  [Formoniq],
+  [Rust, FEEC, Differential Geometry, WebGPU],
+  [Coordinate-free finite element exterior calculus engine for PDEs on pseudo-Riemannian manifolds of arbitrary dimension],
+  [
+    - Structure-preserving engine for Hodge-Laplace and Hodge-Dirac operator
+    - Arbitrary dimension and form degree and support for non-trivial topology
+    - Regge calculus for any metric signature: Riemannian and Lorentzian (spacetime)
+    - Discretization of de Rham complex (nilpotency, Hodge decomposition, cohomology)
+    - \~12k lines of pure Rust across 8 modular crates, each a self-contained mathematical library
+    - Parallelized solver toolchain in Rust (faer direct solves, rayon-parallel assembly)
+    - Interactive WebGPU/WebAssembly viewer running in the browser: #weblink("https://lwirth.com/formoniq")[lwirth.com/formoniq]
+    - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
+  ]
+)
+
+#project-entry(
+  [Carveout],
+  [Rust, Rendering, WebGPU, WebAssembly],
+  [High-Performance Digital Pen Note-Taking Application],
+  [
+    - Nonlinear undo-tree data structure to preserve full editing history across branches
+    - Rendering with WebGPU for cross-platform hardware acceleration
+    - WebAssembly app with custom egui-winit-wgpu integration
+    - Repository: #weblink("https://github.com/luiswirth/carveout")[GitHub]
+  ]
+)
+
+#project-entry(
+  [Arcus],
+  [Rust, Embedded Programming, RTIC, Microcontroller],
+  [Smart LED Strip with Interactive Animations],
+  [
+    - Embedded Rust based on real-time interrupt-driven concurrency (RTIC)
+    - Raspberry Pi Pico RP2040 microcontroller
+    - Programmable IO state machine driver for WS2812 LEDs using PIO assembly
+    - Controller support for UART, bluetooth and infrared remote
+    - Repository: #weblink("https://github.com/luiswirth/arcus")[GitHub]
+  ]
+)
+
+//#project-entry(
+//  [UTTT],
+//  [Rust, Networking, Type-Level Abstraction],
+//  [Implementation of Ultimate Tic-Tac-Toe],
+//  [
+//    - Networked multiplayer server using standard TCP stream handling
+//    - Recursive game state abstraction allowing arbitrarily deep board nestings
+//    - egui for rendering and Serde for serialization
+//    - Repository: #weblink("https://github.com/luiswirth/uttt")[GitHub]
+//  ]
+//)
+
+//#project-entry(
+//  [lwirth-lib],
+//  [C++, Rendering, Vulkan API, Neural Networks],
+//  [General-Purpose Library and Graphics Engine in C++17],
+//  [
+//    - Vulkan rendering engine
+//    - Neural network implementation using Eigen
+//    - Dynamic array, pool and stack allocators
+//    - Custom templated linear algebra module
+//    - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
+//  ],
+//)
+
+#section-header("Publications & Talks")
 
 #talk-entry(
   [Semester Project: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations],
@@ -246,73 +313,6 @@
     - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube]
   ]
 )
-
-
-#section-header("Technical Projects & Open-Source")
-
-#project-entry(
-  [Formoniq],
-  [Rust, FEEC, Differential Geometry],
-  [Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
-  [
-    - Solves Hodge-Laplace source and eigenvalue problems
-    - Support for arbitrary dimensional manifolds with non-trivial topology
-    - Support for arbitrary rank differential forms
-    - Sophisticated data structures for simplicial mesh and exterior algebra using multi-indices
-    - \~6k LOC of Rust, PETSc/SLEPc solver backend
-    - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
-  ]
-)
-
-#project-entry(
-  [Carveout],
-  [Rust, Rendering, WebGPU, WebAssembly],
-  [High-Performance Digital Pen Note-Taking Application],
-  [
-    - Nonlinear undo-tree data structure to preserve full editing history across branches
-    - Rendering with WebGPU for cross-platform hardware acceleration
-    - WebAssembly app with custom egui-winit-wgpu integration
-    - Repository: #weblink("https://github.com/luiswirth/carveout")[GitHub]
-  ]
-)
-
-#project-entry(
-  [Arcus],
-  [Rust, Embedded Programming, RTIC, Microcontroller],
-  [Smart LED Strip with Interactive Animations],
-  [
-    - Embedded Rust based on real-time interrupt-driven concurrency (RTIC)
-    - Raspberry Pi Pico RP2040 microcontroller
-    - Programmable IO state machine driver for WS2812 LEDs using PIO assembly
-    - Controller support for UART, bluetooth and infrared remote
-    - Repository: #weblink("https://github.com/luiswirth/arcus")[GitHub]
-  ]
-)
-
-#project-entry(
-  [UTTT],
-  [Rust, Networking, Type-Level Abstraction],
-  [Implementation of Ultimate Tic-Tac-Toe],
-  [
-    - Networked multiplayer server using standard TCP stream handling
-    - Recursive game state abstraction allowing arbitrarily deep board nestings
-    - egui for rendering and Serde for serialization
-    - Repository: #weblink("https://github.com/luiswirth/uttt")[GitHub]
-  ]
-)
-
-//#project-entry(
-//  [lwirth-lib],
-//  [C++, Rendering, Vulkan API, Neural Networks],
-//  [General-Purpose Library and Graphics Engine in C++17],
-//  [
-//    - Vulkan rendering engine
-//    - Neural network implementation using Eigen
-//    - Dynamic array, pool and stack allocators
-//    - Custom templated linear algebra module
-//    - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
-//  ],
-//)
 
 #section-header("Skills")
 
