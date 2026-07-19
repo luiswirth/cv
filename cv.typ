@@ -222,10 +222,10 @@
     - Structure-preserving engine for Hodge-Laplace and Hodge-Dirac operator
     - Arbitrary dimension and form degree and support for non-trivial topology
     - Regge calculus for any metric signature: Riemannian and Lorentzian (spacetime)
-    - Discretization of de Rham complex (nilpotency, Hodge decomposition, cohomology)
+    - Discretization of de Rham complex (nilpotency, cohomology, and Hodge decomposition)
     - \~12k lines of pure Rust across 8 modular crates, each a self-contained mathematical library
     - Parallelized solver toolchain in Rust (faer direct solves, rayon-parallel assembly)
-    - Interactive WebGPU/WebAssembly viewer running in the browser: #weblink("https://lwirth.com/formoniq")[lwirth.com/formoniq]
+    - Interactive WebGPU/WebAssembly viewer: #weblink("https://lwirth.com/formoniq")[lwirth.com/formoniq]
     - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
   ]
 )
