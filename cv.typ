@@ -98,7 +98,7 @@
     - *GPA:* 5.64/6.0
     - *Field of specialization:* Computational Electromagnetics
     - *Focus:* Physics-Informed Machine Learning
-    - *Semester Project*: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations
+    - *Semester Project*: BEM Benchmark of the Ehrenpreis–Palamodov Gaussian Process for Maxwell Cavity Scattering
     - *Key Coursework:*
       // always adjust to specific application
       - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
@@ -283,9 +283,9 @@
 #section-header("Publications & Talks")
 
 #talk-entry(
-  [Semester Project: BEM Benchmark for Ehrenpreis–Palamodov Gaussian Processes for Maxwell's Equations],
+  [Semester Project: BEM Benchmark of the Ehrenpreis–Palamodov Gaussian Process for Maxwell Cavity Scattering],
   [ETH Zürich],
-  [in progress],
+  [July 2026],
   [
     - Supervisor: Prof. Dr.-Ing. Stefan Kurz
     - Topics: Maxwell's Equations, Boundary Element Method, AI4science, Gaussian Processes, Exterior Calculus
