@@ -82,7 +82,8 @@
   #weblink("mailto:luwirth@ethz.ch") \
   #weblink("https://lwirth.com/linkedin")[LinkedIn] |
   #weblink("https://lwirth.com/github")[GitHub] |
-  #weblink("https://lwirth.com/youtube")[YouTube]
+  #weblink("https://lwirth.com/youtube")[YouTube] |
+  #weblink("https://orcid.org/0009-0001-9809-9517")[ORCID]
 ]
 
 #v(-0.7cm)
