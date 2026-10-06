@@ -177,7 +177,7 @@
 #cv-entry(
   [Research Assistant],
   [ETH Zurich (Seminar for Applied Mathematics) -- Zurich, CH],
-  [2026\ August -- present],
+  [2026\ Aug -- present],
   [
     - Structure-preserving Gaussian process for source-free Maxwell's equations
     - Geometric field theory of electromagnetism on Lorentzian spacetime
@@ -189,7 +189,7 @@
 #cv-entry(
   [Teaching Assistant NumPDE],
   [ETH Zurich (Seminar for Applied Mathematics) -- Zurich, CH],
-  [2024\ February -- June],
+  [2024\ Feb -- Jun],
   [
     - TA for "Numerical Methods for Partial Differential Equations" (Prof. R. Hiptmair)
     - Instructed students in weekly tutorials on mathematical theory and C++ implementation
@@ -199,7 +199,7 @@
 #cv-entry(
   [R&D Software Engineer],
   [University of Basel (Dept. of Biomedical Engineering) -- Basel, CH],
-  [2020\ June -- December],
+  [2020\ Jun -- Dec],
   [
     - Joined the MIRACLE project (Minimally Invasive Robot-Assisted Computer-guided Laserosteotome)
     - Developed SpectoVR, a virtual reality surgical planning tool
@@ -212,7 +212,7 @@
 #cv-entry(
   [Software Engineer Intern],
   [Adobe -- San Francisco, USA],
-  [2019\ July -- August],
+  [2019\ Jul -- Aug],
   [
     - Joined the Adobe Experience Manager Screens team
     - Built a content targeting prototype using TensorFlow for personalized
