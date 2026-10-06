@@ -232,6 +232,42 @@
 //)
 
 
+#section-header("Publications & Talks")
+
+#talk-entry(
+  [Guest Lecture: Discretization of Differential Forms for the Numerical Solution of PDEs],
+  [ETH Zurich],
+  [May 2026],
+  [
+    - Given in the course "Electromagnetics and Differential Forms" (Prof. S. Kurz)
+    - Topics: FEEC, Hodge–Laplace Mixed Formulation, Hodge Decomposition, de Rham Cohomology, Simplicial Cochains, Whitney Forms
+    - Slides: #weblink("https://feec-pres.lwirth.com")[PDF]
+    - Recording: #weblink("https://youtu.be/oXJbLh8aBRs")[YouTube]
+  ]
+)
+
+#talk-entry(
+  [BSc Thesis: Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
+  [ETH Zurich],
+  [May 2025],
+  [
+    - _"The best BSc thesis I have seen in years"_ --- Prof. R. Hiptmair
+    - Topics: PDEs, FEM, Manifolds, Differential Geometry, Exterior Calculus, Regge Calculus
+    - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv:2506.02429]
+    - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
+  ]
+)
+
+#talk-entry(
+  [Seminar Talk: Lean4 and the Curry–Howard Isomorphism],
+  [ETH Zurich (ZUCCMAP)],
+  [November 2024],
+  [
+    - Topics: Functional Programming, Type Theory, Propositions-as-Types and Formal Verification
+    - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube]
+  ]
+)
+
 #section-header("Technical Projects & Open-Source")
 
 #project-entry(
@@ -300,42 +336,6 @@
 //    - Repository: #weblink("https://github.com/luiswirth/lwirth-lib")[GitHub]
 //  ],
 //)
-
-#section-header("Publications & Talks")
-
-#talk-entry(
-  [Guest Lecture: Discretization of Differential Forms for the Numerical Solution of PDEs],
-  [ETH Zurich],
-  [May 2026],
-  [
-    - Given in the course "Electromagnetics and Differential Forms" (Prof. S. Kurz)
-    - Topics: FEEC, Hodge–Laplace Mixed Formulation, Hodge Decomposition, de Rham Cohomology, Simplicial Cochains, Whitney Forms
-    - Slides: #weblink("https://feec-pres.lwirth.com")[PDF]
-    - Recording: #weblink("https://youtu.be/oXJbLh8aBRs")[YouTube]
-  ]
-)
-
-#talk-entry(
-  [BSc Thesis: Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
-  [ETH Zurich],
-  [May 2025],
-  [
-    - _"The best BSc thesis I have seen in years"_ --- Prof. R. Hiptmair
-    - Topics: PDEs, FEM, Manifolds, Differential Geometry, Exterior Calculus, Regge Calculus
-    - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv:2506.02429]
-    - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
-  ]
-)
-
-#talk-entry(
-  [Seminar Talk: Lean4 and the Curry–Howard Isomorphism],
-  [ETH Zurich (ZUCCMAP)],
-  [November 2024],
-  [
-    - Topics: Functional Programming, Type Theory, Propositions-as-Types and Formal Verification
-    - Recording: #weblink("https://youtu.be/Sy_4z751YWI")[YouTube]
-  ]
-)
 
 #section-header("Skills")
 
