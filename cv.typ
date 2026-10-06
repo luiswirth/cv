@@ -115,6 +115,7 @@
       - Mathematical and Computational Methods in Photonics#pr (Boundary Integral, Neumann–Poincaré, Subwavelength)
       - Semiconductor Devices: Quantum Transport at the Nanoscale#pr (Transistor-Level Simulation, NEGF)
       // - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
+      // - VLSI Design I–III: FPGA/RTL to Full-Custom ASIC (SystemVerilog, Vivado, Standard-Cell, Cadence Virtuoso)
       - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
       - VLSI 2: From Netlist to Complete System on Chip (Full-Custom HFT ASIC Project)
       - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
