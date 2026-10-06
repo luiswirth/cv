@@ -81,7 +81,7 @@
 #align(center)[
   #text(size: 24pt, weight: "bold")[Luis Wirth] \
   #text(size: 11pt)[
-    *MSc Student in Computational Science and Engineering at ETH Zürich* \
+    *MSc Student in Computational Science and Engineering at ETH Zurich* \
   ]
   #v(0.2em)
   #weblink("https://lwirth.com")[lwirth.com] |
@@ -99,13 +99,13 @@
 
 #cv-entry(
   [MSc ETH Computational Science and Engineering],
-  [ETH Zürich -- Zürich, CH],
+  [ETH Zurich -- Zurich, CH],
   [2025 -- (2027)],
   [
     - *GPA:* 5.69/6.0
     - *Field of specialization:* Computational Electromagnetics
     - *Focus:* Structure-Preserving Machine Learning
-    - *Semester Project*: BEM Benchmark of the Ehrenpreis–Palamodov Gaussian Process for Maxwell Cavity Scattering
+    - *Semester Project*: BEM Benchmark of the EPGP for Maxwell Cavity Scattering
     - *Key Coursework:*
       // always adjust to specific application
       // - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
@@ -127,7 +127,7 @@
 
 #cv-entry(
   [BSc ETH Computational Science and Engineering],
-  [ETH Zürich -- Zürich, CH],
+  [ETH Zurich -- Zurich, CH],
   [2021 -- 2025],
   [
     - *GPA:* 5.41/6.0
@@ -176,7 +176,7 @@
 
 #cv-entry(
   [Research Assistant],
-  [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
+  [ETH Zurich (Seminar for Applied Mathematics) -- Zurich, CH],
   [2026\ August -- present],
   [
     - Structure-preserving Gaussian process for source-free Maxwell's equations
@@ -188,7 +188,7 @@
 
 #cv-entry(
   [Teaching Assistant NumPDE],
-  [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
+  [ETH Zurich (Seminar for Applied Mathematics) -- Zurich, CH],
   [2024\ February -- June],
   [
     - TA for "Numerical Methods for Partial Differential Equations" (Prof. R. Hiptmair)
@@ -239,12 +239,13 @@
   [Rust, FEEC, Differential Geometry, WebGPU],
   [Coordinate-free finite element exterior calculus engine for PDEs on pseudo-Riemannian manifolds of arbitrary dimension],
   [
-    - Structure-preserving engine for Hodge–Laplace and Hodge–Dirac operator
-    - Arbitrary dimension and form degree and support for non-trivial topology
+    - Structure-preserving engine for the Hodge–Laplace and Hodge–Dirac operators
+    - Arbitrary dimension and form degree, with support for non-trivial topology
     - Regge calculus for any metric signature: Riemannian and Lorentzian (spacetime)
-    - Discretization of de Rham complex (nilpotency, cohomology, and Hodge decomposition)
-    - \~24k lines of pure Rust across 8 modular crates, each a self-contained mathematical library
-    - Parallelized solver toolchain in Rust (faer direct solves, rayon-parallel assembly)
+    - Discretization of the de Rham complex (nilpotency, cohomology, and Hodge decomposition)
+    - \~24k lines of pure Rust across 8 modular crates, each a self-contained math library
+    - Parallel solver toolchain in Rust (faer direct solves, rayon-parallel assembly)
+    - Began as the BSc thesis implementation, now a standalone library
     - Interactive WebGPU/WebAssembly viewer: #weblink("https://formoniq-studio.lwirth.com")[formoniq-studio.lwirth.com]
     - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
   ]
@@ -303,20 +304,32 @@
 #section-header("Publications & Talks")
 
 #talk-entry(
+  [Guest Lecture: Discretization of Differential Forms for the Numerical Solution of PDEs],
+  [ETH Zurich],
+  [May 2026],
+  [
+    - Given in the course "Electromagnetics and Differential Forms" (Prof. S. Kurz)
+    - Topics: FEEC, Hodge–Laplace Mixed Formulation, Hodge Decomposition, de Rham Cohomology, Simplicial Cochains, Whitney Forms
+    - Slides: #weblink("https://feec-pres.lwirth.com")[PDF]
+    - Recording: #weblink("https://youtu.be/oXJbLh8aBRs")[YouTube]
+  ]
+)
+
+#talk-entry(
   [BSc Thesis: Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
-  [ETH Zürich],
+  [ETH Zurich],
   [May 2025],
   [
     - _"The best BSc thesis I have seen in years"_ --- Prof. R. Hiptmair
-    - Topics: PDEs, FEM, Differential Geometry, Exterior Calculus, de Rham Cohomology, Regge Calculus
+    - Topics: PDEs, FEM, Manifolds, Differential Geometry, Exterior Calculus, Regge Calculus
     - Paper: #weblink("https://arxiv.org/abs/2506.02429")[arXiv:2506.02429]
     - Presentation: #weblink("https://youtu.be/A4px5jTXcOM")[YouTube]
   ]
 )
 
 #talk-entry(
-  [Seminar Talk: Lean 4 and the Curry–Howard Isomorphism],
-  [ETH Zürich (ZUCCMAP)],
+  [Seminar Talk: Lean4 and the Curry–Howard Isomorphism],
+  [ETH Zurich (ZUCCMAP)],
   [November 2024],
   [
     - Topics: Functional Programming, Type Theory, Propositions-as-Types and Formal Verification
