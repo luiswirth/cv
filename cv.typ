@@ -182,7 +182,7 @@
     - Structure-preserving Gaussian process for source-free Maxwell's equations
     - Geometric field theory of electromagnetism on Lorentzian spacetime
     - GP kernel built by applying spectral exterior calculus to the Hodge–Dirac equation
-    - Joint paper with Prof. S. Kurz and F. L. Vittori, in preparation for a SIAM journal
+    - Joint SIAM journal paper (in preparation) with Prof. S. Kurz and F. L. Vittori
   ]
 )
 
