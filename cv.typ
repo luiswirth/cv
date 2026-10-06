@@ -4,7 +4,7 @@
 )
 #set text(
   font: "New Computer Modern Sans",
-  size: 9pt,
+  size: 8.9pt,
   lang: "en"
 )
 
@@ -28,47 +28,53 @@
 }
 
 #let cv-entry(title, org, date, details) = {
-  grid(
-    columns: (10%, auto),
-    gutter: 1em,
-    text(style: "italic", fill: gray.darken(30%), date),
+  block(breakable: false,
+    grid(
+      columns: (10%, auto),
+      gutter: 1em,
+      text(style: "italic", fill: gray.darken(30%), date),
+      stack(
+        dir: ttb,
+        spacing: 0.3em,
+        text(weight: "bold", size: 11pt, title),
+        v(0.5em),
+        text(style: "italic", org),
+        v(0.8em),
+        details,
+      )
+    )
+  )
+}
+
+#let talk-entry(title, org, date, details) = {
+  block(breakable: false,
     stack(
       dir: ttb,
       spacing: 0.3em,
       text(weight: "bold", size: 11pt, title),
       v(0.5em),
-      text(style: "italic", org),
+      text(style: "italic", org + [ -- ] + date),
       v(0.8em),
       details,
     )
   )
 }
 
-#let talk-entry(title, org, date, details) = {
-  stack(
-    dir: ttb,
-    spacing: 0.3em,
-    text(weight: "bold", size: 11pt, title),
-    v(0.5em),
-    text(style: "italic", org + [ -- ] + date),
-    v(0.8em),
-    details,
-  )
-}
-
 #let project-entry(title, tech, desc, details) = {
-  stack(
-    dir: ttb,
-    spacing: 0.3em,
-    text(weight: "bold", size: 11pt, title) + " | " + text(style: "italic", tech),
-    v(0.5em),
-    text(style: "italic", desc),
-    v(0.8em),
-    details,
+  block(breakable: false,
+    stack(
+      dir: ttb,
+      spacing: 0.3em,
+      text(weight: "bold", size: 11pt, title) + " | " + text(style: "italic", tech),
+      v(0.5em),
+      text(style: "italic", desc),
+      v(0.8em),
+      details,
+    )
   )
 }
 
-#let pr-sym = [\*]
+#let pr-sym = [#sym.dagger.double]
 #let pr = [#super[#pr-sym]]
 
 // --- Header ---
@@ -96,24 +102,25 @@
   [ETH Zürich -- Zürich, CH],
   [2025 -- (2027)],
   [
-    - *GPA:* 5.64/6.0
+    - *GPA:* 5.69/6.0
     - *Field of specialization:* Computational Electromagnetics
-    - *Focus:* Physics-Informed Machine Learning
+    - *Focus:* Structure-Preserving Machine Learning
     - *Semester Project*: BEM Benchmark of the Ehrenpreis–Palamodov Gaussian Process for Maxwell Cavity Scattering
     - *Key Coursework:*
       // always adjust to specific application
-      - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
+      // - Computational and Statistical Aspects of Diffusion Models#pr (Stochastic Calculus, Time-Reversal, Score/Flow Matching)
       - AI in the Sciences and Engineering (PINNs, Graph Neural Operators, Physics Foundation Models)
-      - CSCS Summer School#pr (HPC, CUDA, MPI)
       - Advanced Numerical Methods for CSE (Boundary Element Method, Hybrid Modeling for PDEs, GPs)
-      - Electromagnetics and Differential Forms#pr (Differentiable Manifolds, De Rham Complex, DF Discretization)
+      - Electromagnetics and Differential Forms (Differentiable Manifolds, De Rham Complex, DF Discretization)
+      - Mathematical and Computational Methods in Photonics#pr (Boundary Integral, Neumann–Poincaré, Subwavelength)
       - Semiconductor Devices: Quantum Transport at the Nanoscale#pr (Transistor-Level Simulation, NEGF)
-      - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
+      // - Neuromorphic Engineering I (CMOS Device Physics, Subthreshold CMOS, Analog VLSI)
       - VLSI 1: HDL Based Design for FPGAs (RTL, SystemVerilog, Xilinx Vivado)
-      - VLSI 2: From Netlist to Complete System on Chip#pr (Full-Custom HFT ASIC Project)
+      - VLSI 2: From Netlist to Complete System on Chip (Full-Custom HFT ASIC Project)
       - VLSI 3: Full-Custom Digital Circuit Design (Transistor-Level CMOS, Standard-Cell Design, Cadence Virtuoso)
+      - CSCS Summer School (HPC, CUDA, MPI)
 
-    #text(size: 7pt, fill: gray.darken(20%), style: "italic")[#pr-sym currently enrolled]
+    #text(size: 7pt, fill: gray.darken(20%), style: "italic")[#pr-sym in progress]
   ]
 )
 
@@ -167,6 +174,18 @@
 #section-header("Professional Experience")
 
 #cv-entry(
+  [Research Assistant],
+  [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
+  [2026\ August -- present],
+  [
+    - Structure-preserving Gaussian process for source-free Maxwell's equations
+    - Geometric field theory of electromagnetism on Lorentzian spacetime
+    - GP kernel built by applying spectral exterior calculus to the Hodge–Dirac equation
+    - Joint paper with Prof. S. Kurz and F. L. Vittori, in preparation for a SIAM journal
+  ]
+)
+
+#cv-entry(
   [Teaching Assistant NumPDE],
   [ETH Zürich (Seminar for Applied Mathematics) -- Zürich, CH],
   [2024\ February -- June],
@@ -200,18 +219,17 @@
   ]
 )
 
-#cv-entry(
-  [Computational Physicist Intern],
-  [University of Basel (Dept. of Physics) -- Basel, CH],
-  [2018\ July],
-  [
-    - Implemented a custom neural network with backpropagation in C++/Eigen
-    - Trained the model to predict the potential energies of the water 
-      molecule from atomic configurations
-  ]
-)
+//#cv-entry(
+//  [Computational Physicist Intern],
+//  [University of Basel (Dept. of Physics) -- Basel, CH],
+//  [2018\ July],
+//  [
+//    - Implemented a custom neural network with backpropagation in C++/Eigen
+//    - Trained the model to predict the potential energies of the water 
+//      molecule from atomic configurations
+//  ]
+//)
 
-#pagebreak(weak: true)
 
 #section-header("Technical Projects & Open-Source")
 
@@ -284,16 +302,6 @@
 #section-header("Publications & Talks")
 
 #talk-entry(
-  [Semester Project: BEM Benchmark of the Ehrenpreis–Palamodov Gaussian Process for Maxwell Cavity Scattering],
-  [ETH Zürich],
-  [July 2026],
-  [
-    - Supervisor: Prof. Dr.-Ing. Stefan Kurz
-    - Topics: Maxwell's Equations, Boundary Element Method, AI4science, Gaussian Processes, Exterior Calculus
-  ]
-)
-
-#talk-entry(
   [BSc Thesis: Rust Implementation of Finite Element Exterior Calculus on Coordinate-Free Simplicial Complexes],
   [ETH Zürich],
   [May 2025],
@@ -325,4 +333,4 @@
 - EDA / Hardware: Cadence Virtuoso, Xilinx Vivado
 - Tooling: Linux, Nix, Git, Typst, LaTeX
 
-*Spoken Languages:* German (native), English (C2), French (B1), Spanish (A2)
+*Spoken Languages:* German (native), English (C2), Spanish (B1), French (B1)
