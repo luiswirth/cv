@@ -238,11 +238,11 @@
   [Rust, FEEC, Differential Geometry, WebGPU],
   [Coordinate-free finite element exterior calculus engine for PDEs on pseudo-Riemannian manifolds of arbitrary dimension],
   [
-    - Structure-preserving engine for Hodge-Laplace and Hodge-Dirac operator
+    - Structure-preserving engine for Hodge–Laplace and Hodge–Dirac operator
     - Arbitrary dimension and form degree and support for non-trivial topology
     - Regge calculus for any metric signature: Riemannian and Lorentzian (spacetime)
     - Discretization of de Rham complex (nilpotency, cohomology, and Hodge decomposition)
-    - \~12k lines of pure Rust across 8 modular crates, each a self-contained mathematical library
+    - \~24k lines of pure Rust across 8 modular crates, each a self-contained mathematical library
     - Parallelized solver toolchain in Rust (faer direct solves, rayon-parallel assembly)
     - Interactive WebGPU/WebAssembly viewer: #weblink("https://formoniq-studio.lwirth.com")[formoniq-studio.lwirth.com]
     - Repository: #weblink("https://github.com/luiswirth/formoniq")[GitHub]
@@ -314,7 +314,7 @@
 )
 
 #talk-entry(
-  [Seminar Talk: Lean 4 and the Curry-Howard Isomorphism],
+  [Seminar Talk: Lean 4 and the Curry–Howard Isomorphism],
   [ETH Zürich (ZUCCMAP)],
   [November 2024],
   [
